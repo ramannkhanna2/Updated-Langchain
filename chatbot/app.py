@@ -6,16 +6,19 @@ import streamlit as st
 import os
 from dotenv import load_dotenv
 
-os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
+
+load_dotenv()
+OPENAI_API_KEY=os.getenv("OPENAI_API_KEY")
+
 ## Langmith tracking
 os.environ["LANGCHAIN_TRACING_V2"]="true"
-os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
+LANGCHAIN_API_KEY=os.getenv("LANGCHAIN_API_KEY")
 
 ## Prompt Template
 
 prompt=ChatPromptTemplate.from_messages(
     [
-        ("system","You are a helpful assistant. Please response to the user queries"),
+        ("system","You are a helpful assistant. Please response to the user queries in as short as possible plz"),
         ("user","Question:{question}")
     ]
 )

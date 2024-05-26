@@ -1,3 +1,5 @@
+# https://python.langchain.com/v0.2/docs/langserve/
+
 from fastapi import FastAPI
 from langchain.prompts import ChatPromptTemplate
 from langchain.chat_models import ChatOpenAI

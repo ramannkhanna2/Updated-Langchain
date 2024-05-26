@@ -1,3 +1,9 @@
+# have to download model locally firstof all to use it : requires high config machine
+#https://ollama.com/download
+#https://python.langchain.com/v0.2/docs/integrations/chat/ollama/
+
+# ollama run llama2 (install llama2 locally using ollama app)
+
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
