@@ -11,13 +11,12 @@ bs4
 pypdf
 #chromadb
 faiss-cpu
-# groq
-# cassio
+groq
 # beautifulsoup4
-# langchain-groq
-# wikipedia
-# arxiv
-# langchainhub
-# sentence_transformers
-# PyPDF2
-# langchain-objectbox
+wikipedia
+arxiv
+langchainhub
+sentence_transformers
+PyPDF2
+langchain-objectbox
+langchain_groq
